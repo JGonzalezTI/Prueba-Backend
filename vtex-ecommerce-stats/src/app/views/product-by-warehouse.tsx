@@ -75,7 +75,8 @@ export function ProductsByWarehouse() {
   // Calcular métricas
   const totalProducts = products.length
   const totalValue = products.reduce((sum, product) => sum + (parseFloat(product.unit_price) * product.quantity), 0)
-  const lowStockProducts = products.filter(p => p.quantity < 1).length
+  const totalUnitsSold = products.reduce((sum, product) => sum + product.quantity, 0)
+  const averageOrderValue = totalValue / totalUnitsSold
 
   // Preparar datos para el gráfico
   const chartData = products.reduce((acc, product) => {
@@ -119,9 +120,10 @@ export function ProductsByWarehouse() {
         'Nombre Producto': product.name,
         'Marca': product.brand_name,
         'Categoría': product.category_name,
-        'Cantidad': product.quantity,
+        'Unidades Vendidas': product.quantity,
         'Precio Unitario': `$${(parseFloat(product.unit_price) / 100).toFixed(0)}`,
         'Valor Total': `$${(parseFloat(product.unit_price) * product.quantity / 100).toFixed(0)}`,
+        'Valor Promedio': `$${(parseFloat(product.unit_price) / 100).toFixed(0)}`,
         'Fecha Facturación': new Date(product.invoiced_date).toLocaleDateString('es-ES', {
           year: 'numeric',
           month: 'short',
@@ -129,10 +131,7 @@ export function ProductsByWarehouse() {
         }),
         'Ciudad Destino': product.destination_city,
         'Estado Destino': product.destination_state,
-        'País Destino': product.destination_country,
-        'Estado Stock': product.quantity === 0 ? "Sin Stock" :
-                       product.quantity < 5 ? "Stock Bajo" :
-                       "En Stock"
+        'País Destino': product.destination_country
       }))
 
       // Crear el libro de Excel
@@ -146,7 +145,7 @@ export function ProductsByWarehouse() {
       const url = window.URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.href = url
-      link.download = `productos_almacen_${selectedWarehouse}_${new Date().toISOString().split('T')[0]}.xlsx`
+      link.download = `ventas_almacen_${selectedWarehouse}_${new Date().toISOString().split('T')[0]}.xlsx`
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
@@ -193,21 +192,23 @@ export function ProductsByWarehouse() {
             <div className="text-2xl font-bold text-green-600">
               ${(totalValue / 100).toFixed(0)}
             </div>
-            <div className="text-sm text-gray-600">Valor Inventario</div>
+            <div className="text-sm text-gray-600">Valor Total Ventas</div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-4">
-            <div className="text-2xl font-bold text-yellow-600">
-              {products.filter(p => p.quantity > 0 && p.quantity < 3).length}
+            <div className="text-2xl font-bold text-blue-600">
+              {totalUnitsSold}
             </div>
-            <div className="text-sm text-gray-600">Productos con Stock Bajo</div>
+            <div className="text-sm text-gray-600">Unidades Vendidas</div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-4">
-            <div className="text-2xl font-bold text-red-600">{lowStockProducts}</div>
-            <div className="text-sm text-gray-600">Sin Stock</div>
+            <div className="text-2xl font-bold text-purple-600">
+              ${(averageOrderValue / 100).toFixed(0)}
+            </div>
+            <div className="text-sm text-gray-600">Valor Promedio por Unidad</div>
           </CardContent>
         </Card>
       </div>
@@ -224,44 +225,53 @@ export function ProductsByWarehouse() {
               <div className="max-h-[400px] overflow-y-auto">
                 <Table>
                   <TableHeader className="sticky top-0 bg-white z-10">
-                    <TableRow>
-                      <TableHead>Producto</TableHead>
-                      <TableHead>Categoría</TableHead>
-                      <TableHead>Stock</TableHead>
-                      <TableHead>Estado</TableHead>
-                      <TableHead></TableHead>
+                    <TableRow className="">
+                      <TableHead className="font-semibold text-gray-700">Producto</TableHead>
+                      <TableHead className="font-semibold text-gray-700">Categoría</TableHead>
+                      <TableHead className="font-semibold text-gray-700 text-right">Unidades Vendidas</TableHead>
+                      <TableHead className="font-semibold text-gray-700 text-right">Valor Total</TableHead>
+                      <TableHead className="w-[50px]"></TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {loading ? (
                       <TableRow>
-                        <TableCell colSpan={5} className="text-center">Cargando...</TableCell>
+                        <TableCell colSpan={5} className="text-center py-8 text-gray-500">
+                          <div className="flex items-center justify-center">
+                            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-gray-900 mr-2"></div>
+                            Cargando...
+                          </div>
+                        </TableCell>
                       </TableRow>
                     ) : (
                       products.map((product) => (
-                        <TableRow key={product.product_id}>
-                          <TableCell>
+                        <TableRow key={product.product_id} className="hover:bg-gray-50 transition-colors">
+                          <TableCell className="py-4">
                             <div>
-                              <div className="font-medium">{product.name}</div>
+                              <div className="font-medium text-gray-900">{product.name}</div>
                               <div className="text-sm text-gray-500">{product.brand_name}</div>
                             </div>
                           </TableCell>
-                          <TableCell>{product.category_name}</TableCell>
-                          <TableCell>{product.quantity}</TableCell>
-                          <TableCell>
-                            <Badge className={
-                              product.quantity === 0 ? "bg-red-100 text-red-800" :
-                              product.quantity < 5 ? "bg-yellow-100 text-yellow-800" :
-                              "bg-green-100 text-green-800"
-                            }>
-                              {product.quantity === 0 ? "Sin Stock" :
-                               product.quantity < 5 ? "Stock Bajo" :
-                               "En Stock"}
-                            </Badge>
+                          <TableCell className="py-4">
+                            <span className="px-2 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">
+                              {product.category_name}
+                            </span>
                           </TableCell>
-                          <TableCell>
-                            <Button variant="ghost" size="sm">
-                              <Eye className="h-4 w-4" />
+                          <TableCell className="py-4 text-right">
+                            <div className="font-medium text-gray-900">{product.quantity}</div>
+                            <div className="text-sm text-gray-500">unidades</div>
+                          </TableCell>
+                          <TableCell className="py-4 text-right">
+                            <div className="font-medium text-green-600">
+                              ${((parseFloat(product.unit_price) * product.quantity) / 100).toFixed(0)}
+                            </div>
+                            <div className="text-sm text-gray-500">
+                              ${(parseFloat(product.unit_price) / 100).toFixed(0)} c/u
+                            </div>
+                          </TableCell>
+                          <TableCell className="py-4">
+                            <Button variant="ghost" size="sm" className="hover:bg-gray-100">
+                              <Eye className="h-4 w-4 text-gray-500" />
                             </Button>
                           </TableCell>
                         </TableRow>
