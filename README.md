@@ -77,11 +77,18 @@ Las capturas de pantalla del frontend de la aplicación se encuentran en la carp
 ### Dashboard Principal
 ![Dashboard Principal](/vtex-ecommerce-stats/public/dash.png)
 
-### Vista de Productos por Almacén
-![Productos por Almacén](/vtex-ecommerce-stats/public/almacen-cuidad.png)
+### Vista Almacén por cuidad
+![Almacenes por cuidad](/vtex-ecommerce-stats/public/almacen-cuidad.png)
 
 ### Análisis de Destinos
 ![Análisis de Destinos](/vtex-ecommerce-stats/public/destinos-producto.png)
+
+### Productos por almacen
+![Análisis producto por cada almacen](/vtex-ecommerce-stats/public/producto-por-almacen.png)
+
+### Movimientos de generales de almacen y destino
+![Analisis de movimientos por almacen y destino](/vtex-ecommerce-stats/public/movimientos.png)
+
 
 
 ## 📚 Documentación de la API
