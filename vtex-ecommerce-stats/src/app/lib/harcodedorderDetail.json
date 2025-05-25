@@ -1,0 +1,560 @@
+
+{
+    "orderId": "1407293231640-01",
+    "sequence": "3231640",
+    "marketplaceOrderId": "",
+    "marketplaceServicesEndpoint": "http://oms.vtexinternal.com.br/api/oms?an=cuerosvelezco",
+    "sellerOrderId": "00-1407293231640-01",
+    "origin": "Marketplace",
+    "affiliateId": "",
+    "salesChannel": "1",
+    "merchantName": null,
+    "status": "invoiced",
+    "workflowIsInError": false,
+    "statusDescription": "Faturado",
+    "value": 45493000,
+    "creationDate": "2024-01-31T09:16:58.5881070+00:00",
+    "lastChange": "2024-01-31T15:18:08.7099088+00:00",
+    "orderGroup": "1407293231640",
+    "followUpEmail": "329c7af91ede4daf9edb982f2bc9b385@ct.vtex.com.br",
+    "lastMessage": null,
+    "hostname": "cuerosvelezco",
+    "isCompleted": true,
+    "roundingError": 0,
+    "orderFormId": "1bc483ec8fc34f909c4f017c81d458ad",
+    "allowCancellation": false,
+    "allowEdition": false,
+    "isCheckedIn": false,
+    "authorizedDate": "2024-01-31T09:17:06.8170471+00:00",
+    "invoicedDate": "2024-01-31T15:18:08.7098812+00:00",
+    "cancelReason": null,
+    "checkedInPickupPointId": null,
+    "totals": [
+        {
+            "id": "Items",
+            "name": "Total de los items",
+            "value": 64990000
+        },
+        {
+            "id": "Discounts",
+            "name": "Total de descuentos",
+            "value": -19497000
+        },
+        {
+            "id": "Shipping",
+            "name": "Costo total del envío",
+            "value": 0
+        },
+        {
+            "id": "Tax",
+            "name": "Costo total del cambio",
+            "value": 0
+        }
+    ],
+    "sellers": [
+        {
+            "id": "1",
+            "name": "VÉLEZ",
+            "logo": "",
+            "fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?an=cuerosvelezco"
+        }
+    ],
+    "clientPreferencesData": {
+        "locale": "es-CO",
+        "optinNewsLetter": false
+    },
+    "cancellationData": null,
+    "taxData": null,
+    "subscriptionData": null,
+    "itemMetadata": {
+        "Items": [
+            {
+                "Id": "662446",
+                "Seller": "1",
+                "Name": "Botas ambar de cuero para hombre detalle vena en puntera Negro 40",
+                "SkuName": "Botas ambar de cuero para hombre detalle vena en puntera Negro 40",
+                "ProductId": "125582",
+                "RefId": "10357650040",
+                "Ean": "7705007204279",
+                "ImageUrl": "http://cuerosvelezco.vteximg.com.br/arquivos/ids/258149-450-675/1035765-00-01-Botas-de-cuero.jpg?v=638369774330430000",
+                "DetailUrl": "/botas-1035765-00/p",
+                "AssemblyOptions": []
+            }
+        ]
+    },
+    "marketplace": {
+        "baseURL": "http://oms.vtexinternal.com.br/api/oms?an=cuerosvelezco",
+        "isCertified": null,
+        "name": "cuerosvelezco"
+    },
+    "storePreferencesData": {
+        "countryCode": "COL",
+        "currencyCode": "COP",
+        "currencyFormatInfo": {
+            "CurrencyDecimalDigits": 2,
+            "CurrencyDecimalSeparator": ",",
+            "CurrencyGroupSeparator": ".",
+            "CurrencyGroupSize": 3,
+            "StartsWithCurrencySymbol": true
+        },
+        "currencyLocale": 9226,
+        "currencySymbol": "$",
+        "timeZone": "SA Pacific Standard Time"
+    },
+    "customData": null,
+    "commercialConditionData": null,
+    "openTextField": null,
+    "invoiceData": {
+        "userPaymentInfo": null,
+        "address": null,
+        "invoiceSubject": null
+    },
+    "changesAttachment": null,
+    "callCenterOperatorData": null,
+    "packageAttachment": {
+        "packages": [
+            {
+                "items": [
+                    {
+                        "itemIndex": 0,
+                        "quantity": 1,
+                        "price": 45493000,
+                        "description": "Botas ambar de cuero para hombre detalle vena en puntera Negro 40",
+                        "unitMultiplier": 0
+                    }
+                ],
+                "courier": null,
+                "invoiceNumber": "104E 1780",
+                "description": null,
+                "invoiceValue": 45493000,
+                "invoiceUrl": null,
+                "issuanceDate": "2024-01-31T00:00:00.0000000+00:00",
+                "trackingNumber": "",
+                "invoiceKey": null,
+                "trackingUrl": "",
+                "embeddedInvoice": "",
+                "type": "Output",
+                "courierStatus": null,
+                "cfop": null,
+                "restitutions": {},
+                "volumes": null,
+                "EnableInferItems": null
+            }
+        ]
+    },
+    "paymentData": {
+        "transactions": [
+            {
+                "isActive": true,
+                "transactionId": "11CCD09263F14A9196D7D2D800D39AA5",
+                "merchantName": "CUEROSVELEZCO",
+                "payments": [
+                    {
+                        "id": "FE323F454160482AB0199B1118A889E9",
+                        "paymentSystem": "2",
+                        "paymentSystemName": "Visa",
+                        "value": 45493000,
+                        "installments": 1,
+                        "referenceValue": 45493000,
+                        "cardHolder": null,
+                        "cardNumber": null,
+                        "firstDigits": "459504",
+                        "lastDigits": "7835",
+                        "cvv2": null,
+                        "expireMonth": null,
+                        "expireYear": null,
+                        "url": null,
+                        "giftCardId": null,
+                        "giftCardName": null,
+                        "giftCardCaption": null,
+                        "redemptionCode": null,
+                        "group": "creditCard",
+                        "tid": "71320926319",
+                        "dueDate": null,
+                        "connectorResponses": {
+                            "ReturnCode": null,
+                            "authId": "71320926319",
+                            "nsu": "71320926319",
+                            "Message": "accredited",
+                            "acquirer": "MercadoPagoV2",
+                            "Tid": "71320926319"
+                        },
+                        "giftCardProvider": null,
+                        "giftCardAsDiscount": null,
+                        "koinUrl": null,
+                        "accountId": "F933EC6B150541C5A0E7DC6CB57FDD7C",
+                        "parentAccountId": null,
+                        "bankIssuedInvoiceIdentificationNumber": null,
+                        "bankIssuedInvoiceIdentificationNumberFormatted": null,
+                        "bankIssuedInvoiceBarCodeNumber": null,
+                        "bankIssuedInvoiceBarCodeType": null,
+                        "billingAddress": {
+                            "postalCode": null,
+                            "city": "Bogotá, D.c.",
+                            "state": "Bogotá, D.C.",
+                            "country": "COL",
+                            "street": "Carrera63#22a-41",
+                            "number": null,
+                            "neighborhood": "Salitre oriental",
+                            "complement": "Apto409",
+                            "reference": null,
+                            "geoCoordinates": []
+                        },
+                        "paymentOrigin": null
+                    }
+                ]
+            }
+        ],
+        "giftCards": []
+    },
+    "shippingData": {
+        "id": "shippingData",
+        "address": {
+            "addressType": "pickup",
+            "receiverName": "Ricardo Amaya",
+            "addressId": "VGE_001",
+            "versionId": null,
+            "entityId": null,
+            "postalCode": "11001",
+            "city": "Bogotá, D.c.",
+            "state": "Bogotá, D.C.",
+            "country": "COL",
+            "street": "Ac. 26 #62-47 local 2054",
+            "number": "62-47",
+            "neighborhood": "Teusaquillo",
+            "complement": null,
+            "reference": null,
+            "geoCoordinates": [
+                -74.10144,
+                4.648229
+            ]
+        },
+        "logisticsInfo": [
+            {
+                "itemIndex": 0,
+                "itemId": "662446",
+                "selectedSla": "Pickup GE (VGE_001)",
+                "selectedDeliveryChannel": "pickup-in-point",
+                "lockTTL": "12d",
+                "price": 0,
+                "listPrice": 0,
+                "sellingPrice": 0,
+                "deliveryWindow": null,
+                "deliveryCompany": "Recogida en tienda Gran Estación",
+                "shippingEstimate": "4h",
+                "shippingEstimateDate": "2024-01-31T13:17:07.9229722+00:00",
+                "slas": [
+                    {
+                        "id": "Pickup GE (VGE_001)",
+                        "name": "Pickup GE (VGE_001)",
+                        "shippingEstimate": "4h",
+                        "deliveryWindow": null,
+                        "availableDeliveryWindows": [],
+                        "price": 0,
+                        "listPrice": 0,
+                        "deliveryChannel": "pickup-in-point",
+                        "pickupStoreInfo": {
+                            "additionalInfo": "Si tu pedido fue realizado entre las 10:00 a.m. y las 4:00 p.m. nuestra promesa de entrega es de 4 horas el mismo día en que realizaste tu compra. Ten presente que, si tu compra fue realizada por fuera de dicho horario, tu pedido se entregará a partir de las 2:00 p.m. del día siguiente. El horario de nuestras tiendas es de lunes a domingo entre las 11:00 a.m. y 8:00 p.m. Aplica todos los días de la semana incluyendo domingos y festivos. Recuerda presentarte en la tienda seleccionada con el documento de identidad físico.",
+                            "address": {
+                                "addressType": "pickup",
+                                "receiverName": null,
+                                "addressId": "VGE_001",
+                                "versionId": null,
+                                "entityId": null,
+                                "postalCode": "11001",
+                                "city": "Bogotá, D.c.",
+                                "state": "Bogotá, D.C.",
+                                "country": "COL",
+                                "street": "Ac. 26 #62-47 local 2054",
+                                "number": "62-47",
+                                "neighborhood": "Teusaquillo",
+                                "complement": null,
+                                "reference": null,
+                                "geoCoordinates": [
+                                    -74.10144,
+                                    4.648229
+                                ]
+                            },
+                            "dockId": "5104_GRAN_ESTACION",
+                            "friendlyName": "VÉLEZ GRAN ESTACIÓN",
+                            "isPickupStore": true
+                        },
+                        "polygonName": "",
+                        "lockTTL": "12d",
+                        "pickupPointId": "1_VGE_001",
+                        "transitTime": "4h",
+                        "pickupDistance": 7.69935655593872,
+                        "deliveryIds": [
+                            {
+                                "courierId": "Pickup_007",
+                                "courierName": "Recogida en tienda Gran Estación",
+                                "dockId": "5104_GRAN_ESTACION",
+                                "quantity": 1,
+                                "warehouseId": "5104_GRAN_ESTACION",
+                                "accountCarrierName": "cuerosvelezco",
+                                "kitItemDetails": []
+                            }
+                        ],
+                        "shippingEstimateDate": "2024-01-31T13:17:07.9229722+00:00"
+                    }
+                ],
+                "shipsTo": [
+                    "COL"
+                ],
+                "deliveryIds": [
+                    {
+                        "courierId": "Pickup_007",
+                        "courierName": "Recogida en tienda Gran Estación",
+                        "dockId": "5104_GRAN_ESTACION",
+                        "quantity": 1,
+                        "warehouseId": "5104_GRAN_ESTACION",
+                        "accountCarrierName": "cuerosvelezco",
+                        "kitItemDetails": []
+                    }
+                ],
+                "deliveryChannels": [
+                    {
+                        "id": "pickup-in-point",
+                        "stockBalance": 0
+                    }
+                ],
+                "deliveryChannel": "pickup-in-point",
+                "pickupStoreInfo": {
+                    "additionalInfo": "Si tu pedido fue realizado entre las 10:00 a.m. y las 4:00 p.m. nuestra promesa de entrega es de 4 horas el mismo día en que realizaste tu compra. Ten presente que, si tu compra fue realizada por fuera de dicho horario, tu pedido se entregará a partir de las 2:00 p.m. del día siguiente. El horario de nuestras tiendas es de lunes a domingo entre las 11:00 a.m. y 8:00 p.m. Aplica todos los días de la semana incluyendo domingos y festivos. Recuerda presentarte en la tienda seleccionada con el documento de identidad físico.",
+                    "address": {
+                        "addressType": "pickup",
+                        "receiverName": null,
+                        "addressId": "VGE_001",
+                        "versionId": null,
+                        "entityId": null,
+                        "postalCode": "11001",
+                        "city": "Bogotá, D.c.",
+                        "state": "Bogotá, D.C.",
+                        "country": "COL",
+                        "street": "Ac. 26 #62-47 local 2054",
+                        "number": "62-47",
+                        "neighborhood": "Teusaquillo",
+                        "complement": null,
+                        "reference": null,
+                        "geoCoordinates": [
+                            -74.10144,
+                            4.648229
+                        ]
+                    },
+                    "dockId": "5104_GRAN_ESTACION",
+                    "friendlyName": "VÉLEZ GRAN ESTACIÓN",
+                    "isPickupStore": true
+                },
+                "addressId": "VGE_001",
+                "versionId": null,
+                "entityId": null,
+                "polygonName": "",
+                "pickupPointId": "1_VGE_001",
+                "transitTime": "4h"
+            }
+        ],
+        "trackingHints": null,
+        "selectedAddresses": [
+            {
+                "addressType": "pickup",
+                "receiverName": "Ricardo Amaya",
+                "addressId": "VGE_001",
+                "versionId": null,
+                "entityId": null,
+                "postalCode": "11001",
+                "city": "Bogotá, D.c.",
+                "state": "Bogotá, D.C.",
+                "country": "COL",
+                "street": "Ac. 26 #62-47 local 2054",
+                "number": "62-47",
+                "neighborhood": "Teusaquillo",
+                "complement": null,
+                "reference": null,
+                "geoCoordinates": [
+                    -74.10144,
+                    4.648229
+                ]
+            }
+        ],
+        "availableAddresses": [
+            {
+                "addressType": "pickup",
+                "receiverName": "Ricardo Amaya",
+                "addressId": "VGE_001",
+                "versionId": null,
+                "entityId": null,
+                "postalCode": "11001",
+                "city": "Bogotá, D.c.",
+                "state": "Bogotá, D.C.",
+                "country": "COL",
+                "street": "Ac. 26 #62-47 local 2054",
+                "number": "62-47",
+                "neighborhood": "Teusaquillo",
+                "complement": null,
+                "reference": null,
+                "geoCoordinates": [
+                    -74.10144,
+                    4.648229
+                ]
+            }
+        ],
+        "contactInformation": []
+    },
+    "ratesAndBenefitsData": {
+        "id": "ratesAndBenefitsData",
+        "rateAndBenefitsIdentifiers": [
+            {
+                "description": null,
+                "featured": false,
+                "id": "4381ad77-1771-46f7-9610-6e4d3c148bde",
+                "name": "30OFF AON V.2",
+                "matchedParameters": {
+                    "productCluster@CatalogSystem": "820|inclusive"
+                },
+                "additionalInfo": null
+            }
+        ]
+    },
+    "marketingData": {
+        "id": "marketingData",
+        "utmSource": "facebook",
+        "utmPartner": null,
+        "utmMedium": "cpc",
+        "utmCampaign": "VELEZ_COL_FB_PEF_CONVER_CPC_AON_0121_OFERTA",
+        "coupon": null,
+        "utmiCampaign": "",
+        "utmipage": "",
+        "utmiPart": "",
+        "marketingTags": []
+    },
+    "giftRegistryData": null,
+    "clientProfileData": {
+        "id": "clientProfileData",
+        "email": "ricardo@chammayas.berlin-245100202174b.ct.vtex.com.br",
+        "firstName": "Ricardo",
+        "lastName": "Amaya",
+        "documentType": "cedulaCOL",
+        "document": "1018405809",
+        "phone": "+573214876114",
+        "corporateName": null,
+        "tradeName": null,
+        "corporateDocument": null,
+        "stateInscription": null,
+        "corporatePhone": null,
+        "isCorporate": false,
+        "userProfileId": "ea46d533-741f-4505-8269-b650b1930cb2",
+        "userProfileVersion": null,
+        "customerClass": null,
+        "customerCode": null
+    },
+    "items": [
+        {
+            "uniqueId": "FC1D975DC89C477F8964826A8FBB8CD2",
+            "id": "662446",
+            "productId": "125582",
+            "ean": "7705007204279",
+            "lockId": "00-1407293231640-01",
+            "itemAttachment": {
+                "content": {},
+                "name": null
+            },
+            "attachments": [],
+            "quantity": 1,
+            "seller": "1",
+            "name": "Botas ambar de cuero para hombre detalle vena en puntera Negro 40",
+            "refId": "10357650040",
+            "price": 64990000,
+            "listPrice": 64990000,
+            "manualPrice": null,
+            "manualPriceAppliedBy": null,
+            "priceTags": [
+                {
+                    "name": "DISCOUNT@MARKETPLACE",
+                    "value": -19497000,
+                    "isPercentual": false,
+                    "identifier": "4381ad77-1771-46f7-9610-6e4d3c148bde",
+                    "rawValue": -194970,
+                    "rate": null,
+                    "jurisCode": null,
+                    "jurisType": null,
+                    "jurisName": null
+                }
+            ],
+            "imageUrl": "https://cuerosvelezco.vteximg.com.br/arquivos/ids/258149-450-675/1035765-00-01-Botas-de-cuero.jpg?v=638369774330430000",
+            "detailUrl": "/botas-1035765-00/p",
+            "components": [],
+            "bundleItems": [],
+            "params": [],
+            "offerings": [],
+            "attachmentOfferings": [],
+            "sellerSku": "662446",
+            "priceValidUntil": "2025-01-31T09:14:58.0000000+00:00",
+            "commission": 0,
+            "tax": 0,
+            "preSaleDate": null,
+            "additionalInfo": {
+                "brandName": "Vélez",
+                "brandId": "2000000",
+                "categoriesIds": "/2/13/67/",
+                "categories": [
+                    {
+                        "id": 67,
+                        "name": "Botas"
+                    },
+                    {
+                        "id": 13,
+                        "name": "Zapatos"
+                    },
+                    {
+                        "id": 2,
+                        "name": "hombre"
+                    }
+                ],
+                "productClusterId": "163,164,320,443,558,776,809,820,903,914",
+                "commercialConditionId": "1",
+                "dimension": {
+                    "cubicweight": 2.2576,
+                    "height": 33.2,
+                    "length": 12,
+                    "weight": 1040,
+                    "width": 27.2
+                },
+                "offeringInfo": null,
+                "offeringType": null,
+                "offeringTypeId": null
+            },
+            "measurementUnit": "un",
+            "unitMultiplier": 1,
+            "sellingPrice": 45493000,
+            "isGift": false,
+            "shippingPrice": null,
+            "rewardValue": 0,
+            "freightCommission": 0,
+            "priceDefinition": {
+                "sellingPrices": [
+                    {
+                        "value": 45493000,
+                        "quantity": 1
+                    }
+                ],
+                "calculatedSellingPrice": 45493000,
+                "total": 45493000,
+                "reason": null
+            },
+            "taxCode": null,
+            "parentItemIndex": null,
+            "parentAssemblyBinding": null,
+            "callCenterOperator": null,
+            "serialNumbers": null,
+            "assemblies": [],
+            "costPrice": 64990000
+        }
+    ],
+    "marketplaceItems": [],
+    "cancellationRequests": null,
+    "approvedBy": null,
+    "cancelledBy": null,
+    "purchaseAgentData": null,
+    "pendingData": null,
+    "creationEnvironment": "STABLE"
+}
