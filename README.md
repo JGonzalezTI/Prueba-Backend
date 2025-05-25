@@ -58,7 +58,7 @@ POST /api/sync/vtex
 ### Next.js
 - **Integración Full-Stack**: Permite tener el servidor y cliente en un solo entorno, facilitando el desarrollo y mantenimiento.
 - **API Routes**: Proporciona una forma sencilla de crear endpoints API sin necesidad de un backend separado.
-- **Server-Side Rendering**: Mejora el SEO y el rendimiento inicial de la aplicación.
+- **Server-Side Rendering**: Mejor rendimiento inicial y carga de la aplicación.
 - **TypeScript**: Implementado para mayor seguridad de tipos y mejor mantenibilidad del código.
 
 ### PostgreSQL
